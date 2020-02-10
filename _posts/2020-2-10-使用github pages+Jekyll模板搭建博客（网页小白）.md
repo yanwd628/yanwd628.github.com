@@ -1,8 +1,15 @@
-﻿>写在前面：本人大三计算机相关专业，此前没有接触过网页相关知识，最近通过互联网资源使用**github pages+Jekyll模板**搭建了一个博客，这篇文章，我将一步一步演示过程，方便和我一样的小白进行学习交流。
+﻿---
+layout: post
+title: 使用github pages+Jekyll模板搭建博客（网页小白）
+date: 2020-02-10 15:32:24.000000000 +09:00
+---
+
+>写在前面：本人大三计算机相关专业，此前没有接触过网页相关知识，最近通过互联网资源使用**github pages+Jekyll模板**搭建了一个博客，这篇文章，我将一步一步演示过程，方便和我一样的小白进行学习交流。
 ***这是本人的第一篇博客，有什么问题还希望大家可以告诉我。***
 
+>此文章是由CSDN编写，图片无法显示，我已经删除，且有些格式CSDN特有，这里观看不方便
+网址：https://blog.csdn.net/weixin_43871601/article/details/104248805
 
-@[TOC]( 使用github pages+Jekyll模板搭建博客（网页小白）)
 ### 一、前提准备
 	拥有自己的github以及初识git版本管理软件。
 ==推荐学习(强烈推荐）：[廖雪峰老师的Git教程](https://www.liaoxuefeng.com/wiki/896043488029600)==
@@ -13,11 +20,10 @@
 注册过程略，由于是外网，访问会较慢，邮箱验证码也比较慢，耐心等待即可。
 ### 二、创建github pages仓库
 1. 右上角选择New repository
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200210153612149.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg3MTYwMQ==,size_16,color_FFFFFF,t_70 =300x300)
 2. 按照 ==用户名.github.io==的格式创建仓库名
 TIPS：也可是创建为 ==用户名.github.com（推荐此种命名方式）==
 我开始使用的io结尾，访问的时候可能会出现无响应。
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200210153931876.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg3MTYwMQ==,size_16,color_FFFFFF,t_70 =500x500)
+
 ### 三、创建本地仓库
 1. 本地准备 
 在本地磁盘中创建一个空文件夹，用于保存个人博客网站的内容。
@@ -45,7 +51,7 @@ TIPS：也可是创建为 ==用户名.github.com（推荐此种命名方式）==
 （以上下载速度均 比较缓慢，请耐心等待，若出现失败，则再次重新输入命令继续下载，换个时段或者换个网络）
 
 4. 在创建的本地文件夹中，右击选择<kbd>git bash here</kbd>
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200210155500706.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg3MTYwMQ==,size_16,color_FFFFFF,t_70 =200x300)
+
 - 若没有出现该选择，则是git安装出现了问题。
 - 引入Bundle来管理项目中的所有Gem依赖
 执行命令：<kbd>bundle install</kbd>
@@ -96,7 +102,7 @@ git push origin master
 - 别忘了每次修改、添加本地仓库文件之后，要推送到远程github仓库才可以被别人看得到。
 1.修改主题
 用记事本打开本地文件夹的<kbd>_config.yml</kbd>文件
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200210165507576.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg3MTYwMQ==,size_16,color_FFFFFF,t_70 =700x500)
+
 如图所示修改相应个人信息即可，即使没有网页知识的小伙伴也没有关系，依葫芦画瓢很简单的，可以看得懂。
 2.博客文章
 在仓库文件夹下，进入<kbd>_posts</kbd>目录，所有的文章都必须放在<kbd>_posts</kbd>文件夹下，大家可以访问 [Jekyll-目录结构](http://jekyllcn.com/docs/structure/) 详细了解每个文件夹的功能。
@@ -106,6 +112,6 @@ git push origin master
 ### 六、效果展示
 我的网址：[https://yanwd628.github.io/](https://yanwd628.github.io/)
 （还没怎么写博客。。。）
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2020021017252675.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg3MTYwMQ==,size_16,color_FFFFFF,t_70)
+
 >写在最后：即使按照步骤走，每个人都会遇到各式各样的问题，大家可以多搜索，主动去寻找问题的答案。
 ==有问题可以联系我：yanwd628@163.com==
